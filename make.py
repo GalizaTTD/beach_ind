@@ -15,7 +15,7 @@ unordered_stuff = []
 copy_bool = True
 
 # What is the path of your OpenTTD folder?
-openttd_path = "C:/Users/tyler/Documents/OpenTTD/newgrf"
+openttd_path = "~/.local/share/openttd/newgrf/"
 
 #################################
 # NO NEED TO CHANGE STUFF BELOW #
@@ -58,7 +58,7 @@ processed_nml_file.close()
 print("#### nmlc ####")
 
 # Run 
-nmlc = subprocess.run(["nmlc", "-c", "-t", "src\custom_tags.txt", "-l", "src\lang", "--grf", grf_name, merged_nml_path], stdout = subprocess.PIPE, stderr = subprocess.PIPE, text=True)
+nmlc = subprocess.run(["nmlc", "-c", "-t", "src/custom_tags.txt", "-l", "src/lang", "--grf", grf_name, merged_nml_path], stdout = subprocess.PIPE, stderr = subprocess.PIPE, text=True)
 print(nmlc.stdout)
 print(nmlc.stderr)
 

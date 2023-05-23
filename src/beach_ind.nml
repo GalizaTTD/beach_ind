@@ -386,7 +386,7 @@ item(FEAT_INDUSTRIES, beach_industry) {
 		nearby_station_name: string(STR_STATION, string(STR_TOWN), string(STR_NEARBY_STATION_NAME));
 		prob_random: 10;
 		prob_in_game: (param_allow_ingame_gen == 0) ? 0 : 15;
-		fund_cost_multiplier: 101;
+		fund_cost_multiplier: 10;
 		map_colour: 143;
 		spec_flags: bitmask(IND_FLAG_BUILT_ON_WATER);		
 		layouts: [
